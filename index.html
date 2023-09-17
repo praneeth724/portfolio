@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d249055fc7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+         <nav>
+        <img src="images/logo.jpg" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home </a></li>
+            <li><a href="#about">About </a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio </a></li>
+            <li><a href="#contact">Contact </a></li>
+            <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+         <div class="header-text">
+        <p>Game Developer</p>
+        <h1>Hi,I'm <span>Kavindu</span><br> Praneeth from Sri-Lanka</h1>
+        </div>
+    </div>
+</div> 
+<!--about section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+               <img src="images/user.jpg">
+            </div>
+             <div class="about-col-2">
+                <h1 class="sub-title">About Me </h1>
+                <p>I am a passionate game developer with a relentless drive to create immersive and captivating gaming experiences. With a strong foundation in programming and a keen eye for design, I bring virtual worlds to life and challenge players' imaginations. From indie projects to AAA titles, I thrive on pushing the boundaries of interactive storytelling.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links"  onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links"  onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Game Developing</span><br>Game Engines Unity & Unreal </li>
+                        <li><span>Game Designing</span><br>3D Modeling & Animation</li>
+                        <li><span>AI Programming </span><br>Game Concepts and Story  </li>
+                    </ul>
+                </div>
+                <div class="tab-contents " id="Experience">
+                    <ul>
+                        <li><span> July 2019 - Present </span><br> Lead Game Developer GameTech Studios</li>
+                        <li><span> March 2015 - June 2019</span><br> Senior Gameplay Programmer in InteractiveWorld Games</li>
+                        <li><span> November 2012 - February 2015</span><br>Game Developer in PixelCraft Studios </li>
+                        <li><span> May 2011 - October 2012 </span><br>Junior Game Developer (Intern) </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>July 2015</span><br>PHD from United States</li>
+                        <li><span>May 2012</span><br>MSC from London</li>
+                        <li><span>May 2010 </span><br>BSC from Sri-Lanka</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---Services---------------------------------->
+<div id="services">
+ <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="service-list">
+        <div>
+            <i class="fa-solid fa-gamepad"></i>
+            <h2>Custom Game Development </h2>
+            <p>I specialize in creating tailored video games that bring your unique vision to life. From concept to completion, I work closely with you to design and develop a game that aligns with your ideas and objectives.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-dice-d20"></i>
+            <h2>Game Art and <br> Design </h2>
+            <p>My team of talented artists and designers can craft captivating visuals, character designs, and immersive environments that enhance the overall gaming experience. I offer comprehensive art and design fro visually appealing game.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-playstation"></i>
+            <h2>Multiplayer and Online Integration: </h2>
+            <p>Elevate your game with seamless multiplayer and online features. I specialize in creating online experiences, including multiplayer modes, leaderboards, social integration, and server infrastructure to engage and connect players.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+ </div>
+</div>
+<!--portfolio--------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg" alt="p1">
+                <div class="layer">
+                    <h3> Super Mario Mobile Game</h3>
+                    <p>This game is very funny game and famous one around the world.
+                        Download it from play store
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg" alt="p2">
+                <div class="layer">
+                    <h3> Shooting Master</h3>
+                    <p>This game is very funny game and famous one around the world.
+                        Download it from play store
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg" alt="p3">
+                <div class="layer">
+                    <h3> Fruit Ninja Game</h3>
+                    <p>This game is very funny game and famous among elders.
+                        Download it from play store and app store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-----------------content------------------->
+<div id="contact">
+    <div class="container">
+    <div class="row">
+        <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>kavindupraneeth@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>0764823372</p>
+        <div class="social-icons">
+          <a href="https://web.facebook.com/kavindu.ekanayaka.140"><i class="fa-brands fa-facebook"></i></a>  
+            <a href="https://www.youtube.com/channel/UCC1C0pt6m1uR1KY_MNcXbgQ"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/kavindu-praneeth-48529a249/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+    </div>
+        <div class="contact-right">
+            <form >
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Massage"rows="6"placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+               
+            </form>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright 0 Kavindu.Made with<i class="fa-solid fa-heart"></i> by KP Developers</p>
+</div>
+</div>
+<script>
+var sidemenu=document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right="0";
+}
+function closemenu(){
+    sidemenu.style.right="-200px";
+}
+</script>
+
+
+</body>
+</html>
+
+
+
+
